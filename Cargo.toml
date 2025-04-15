@@ -1,0 +1,15 @@
+[package]
+name = "chord-parser"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+console_error_panic_hook = { version = "0.1.7", optional = true }
+js-sys = "0.3.77"
+wasm-bindgen = "0.2.100"
+
+[features]
+default = ["console_error_panic_hook"]
